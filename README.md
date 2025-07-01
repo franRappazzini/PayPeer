@@ -47,7 +47,7 @@ Centralized crypto-fiat ramps often require invasive KYC, are limited by borders
 ## 🧱 Architecture
 
 - **Crypto OrderBook Canister:** Manages creation and listing of buy/sell Crypto orders.
-- **Crypto <>FIAT OrderBook Canister:** Manages creation and listing of buy/sell FIAT orders.
+- **Crypto <> FIAT OrderBook Canister:** Manages creation and listing of buy/sell FIAT orders.
 - **Vault Canister:** Secure escrow vault for temporarily locking crypto assets.
 - **Matchmaking Logic:** Handles order matching and state transitions.
 - **Dispute Resolution Module:** Integrates with [Kleros](https://kleros.io), an Ethereum-based decentralized arbitration protocol. In case of conflict, either party can escalate the dispute to Kleros, where a randomly selected jury will review the case and issue a binding on-chain verdict.
