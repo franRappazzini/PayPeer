@@ -1,1 +1,70 @@
-service : () -> {}
+type CryptoOffer = record {
+  id : nat64;
+  status : OfferStatus;
+  offer_limit : record { nat64; nat64 };
+  creator : principal;
+  token_a : principal;
+  token_b : principal;
+  price_per_unit : nat64;
+  creator_tx_index : opt nat64;
+  creator_release_time : opt nat64;
+  first_escrow_at : opt nat64;
+  second_escrow_at : opt nat64;
+  contrapart_release_time : opt nat64;
+  release_contrapart_tx_index : opt nat64;
+  visibility : OfferVisibility;
+  token_b_amount : opt nat64;
+  contrapart_tx_index : opt nat64;
+  release_creator_tx_index : opt nat64;
+  contrapart : opt principal;
+  creation_date : nat64;
+};
+type OfferStatus = variant {
+  Started;
+  SecondVaultRelease;
+  Paused;
+  Open;
+  FirstEscrow;
+  Cancelled;
+  FirstVaultRelease;
+  SecondEscrow;
+  Completed;
+};
+type OfferVisibility = variant { Private; Public };
+type Review = record {
+  to : principal;
+  from : principal;
+  created_at : nat64;
+  positive : bool;
+};
+type User = record {
+  total_release_time : nat64;
+  first_connection : nat64;
+  "principal" : principal;
+  reviews_made : vec record { principal; Review };
+  premium : bool;
+  reviews_received : vec record { principal; Review };
+  name : opt text;
+  community : opt null;
+  referred_by : opt principal;
+  referrals : vec principal;
+  email : opt text;
+  positive_reviews : nat64;
+  total_volume_transacted : nat64;
+  completed_tx : nat64;
+  negative_reviews : nat64;
+};
+service : () -> {
+  edit_user : (opt text, opt text) -> (opt User);
+  get_all_crypto_offers : () -> (vec CryptoOffer) query;
+  get_crypto_offer : (nat64) -> (opt CryptoOffer) query;
+  get_user : (principal) -> (opt User) query;
+  new_crypto_offer : (
+      principal,
+      principal,
+      nat64,
+      record { nat64; nat64 },
+      OfferVisibility,
+    ) -> (CryptoOffer);
+  new_user : (opt principal) -> (User);
+}
