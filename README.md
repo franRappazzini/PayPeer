@@ -1,3 +1,5 @@
+# PayPeer
+
 # 🌐 100% On-Chain P2P Crypto-Fiat Exchange on Internet Computer
 
 A fully decentralized, censorship-resistant platform built entirely on Internet Computer (ICP) that enables peer-to-peer exchange of cryptocurrencies for fiat — without intermediaries, without KYC, and without centralized custody.
