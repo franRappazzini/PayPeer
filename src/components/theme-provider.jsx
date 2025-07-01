@@ -12,7 +12,6 @@ export function ThemeProvider({
 
   useEffect(() => {
     const root = window.document.documentElement;
-    console.log("themec", theme);
 
     root.classList.remove("light", "dark");
 
