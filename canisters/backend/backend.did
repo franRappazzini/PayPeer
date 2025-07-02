@@ -3,31 +3,30 @@ type CryptoOffer = record {
   status : OfferStatus;
   offer_limit : record { nat64; nat64 };
   creator : principal;
+  token_b_escrow_tx_index : opt nat;
   token_a : principal;
   token_b : principal;
+  token_a_escrow_at : opt nat64;
   price_per_unit : nat64;
-  creator_tx_index : opt nat64;
-  creator_release_time : opt nat64;
-  first_escrow_at : opt nat64;
-  second_escrow_at : opt nat64;
-  contrapart_release_time : opt nat64;
-  release_contrapart_tx_index : opt nat64;
+  token_a_release_tx_index : opt nat;
+  token_b_release_tx_index : opt nat;
+  token_a_escrow_tx_index : opt nat;
+  token_b_escrow_at : opt nat64;
+  conditions : opt text;
   visibility : OfferVisibility;
-  token_b_amount : opt nat64;
-  contrapart_tx_index : opt nat64;
-  release_creator_tx_index : opt nat64;
+  token_b_amount : opt nat;
+  taken_at : opt nat64;
   contrapart : opt principal;
   creation_date : nat64;
 };
 type OfferStatus = variant {
   Started;
-  SecondVaultRelease;
   Paused;
   Open;
-  FirstEscrow;
+  TokenAEscrow;
+  TokenBEscrow;
+  TokenBRelease;
   Cancelled;
-  FirstVaultRelease;
-  SecondEscrow;
   Completed;
 };
 type OfferVisibility = variant { Private; Public };
@@ -55,7 +54,10 @@ type User = record {
   negative_reviews : nat64;
 };
 service : () -> {
+  cancel_crypto_offer : (nat64) -> (opt CryptoOffer);
   edit_user : (opt text, opt text) -> (opt User);
+  escrow_crypto_token_a : (nat64) -> (opt CryptoOffer);
+  escrow_crypto_token_b : (nat64) -> (opt CryptoOffer);
   get_all_crypto_offers : () -> (vec CryptoOffer) query;
   get_crypto_offer : (nat64) -> (opt CryptoOffer) query;
   get_user : (principal) -> (opt User) query;
@@ -65,6 +67,10 @@ service : () -> {
       nat64,
       record { nat64; nat64 },
       OfferVisibility,
+      opt text,
     ) -> (CryptoOffer);
   new_user : (opt principal) -> (User);
+  pause_crypto_offer : (nat64) -> (opt CryptoOffer);
+  resume_crypto_offer : (nat64) -> (opt CryptoOffer);
+  take_crypto_offer : (nat64, nat) -> (opt CryptoOffer);
 }

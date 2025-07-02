@@ -1,6 +1,6 @@
 use std::borrow::Cow;
 
-use candid::{CandidType, Decode, Encode, Principal};
+use candid::{CandidType, Decode, Encode, Nat, Principal};
 use ic_stable_structures::{storable::Bound, Storable};
 use serde::Deserialize;
 
@@ -11,22 +11,22 @@ pub struct CryptoOffer {
     pub id: u64,
     pub creator: Principal,
     pub contrapart: Option<Principal>,
-    pub token_a: Principal, // buy token
-    pub token_b: Principal, // sell token
-    pub price_per_unit: u64,
-    pub offer_limit: (u64, u64), // token_a
-    pub token_b_amount: Option<u64>,
+    pub token_a: Principal,      // buy token
+    pub token_b: Principal,      // sell token
+    pub price_per_unit: u64,     // token_b
+    pub offer_limit: (u64, u64), // token_b
+    pub token_b_amount: Option<Nat>,
     pub visibility: OfferVisibility,
     pub status: OfferStatus,
+    pub conditions: Option<String>,
     pub creation_date: u64,
-    pub first_escrow_at: Option<u64>,
-    pub second_escrow_at: Option<u64>,
-    pub creator_release_time: Option<u64>,
-    pub contrapart_release_time: Option<u64>,
-    pub creator_tx_index: Option<u64>,
-    pub contrapart_tx_index: Option<u64>,
-    pub release_creator_tx_index: Option<u64>,
-    pub release_contrapart_tx_index: Option<u64>,
+    pub taken_at: Option<u64>, // timestamp when the offer was taken
+    pub token_a_escrow_at: Option<u64>,
+    pub token_b_escrow_at: Option<u64>,
+    pub token_a_escrow_tx_index: Option<Nat>,
+    pub token_b_escrow_tx_index: Option<Nat>,
+    pub token_a_release_tx_index: Option<Nat>,
+    pub token_b_release_tx_index: Option<Nat>,
 }
 
 // For a type to be used in a `StableBTreeMap`, it needs to implement the `Storable`

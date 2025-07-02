@@ -7,14 +7,14 @@ pub enum OfferVisibility {
     Private,
 }
 
-#[derive(CandidType, Deserialize, Clone)]
+#[derive(CandidType, Deserialize, Clone, PartialEq)]
 pub enum OfferStatus {
     Open,
     Started,
-    FirstEscrow,
-    SecondEscrow,
-    FirstVaultRelease,
-    SecondVaultRelease,
+    TokenAEscrow,
+    TokenBEscrow,
+    // TokenARelease, // This is not needed, as the offer is completed when token A is released
+    TokenBRelease,
     Completed,
     Paused,
     Cancelled,
