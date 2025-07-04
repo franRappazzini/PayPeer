@@ -1,14 +1,26 @@
 # PayPeer
 
-# 🌐 100% On-Chain P2P Crypto-Fiat Exchange on Internet Computer
+# 🌐 100% On-Chain P2P Crypto-Fiat & Crypto-Crypto Exchange on Internet Computer
 
-A fully decentralized, censorship-resistant platform built entirely on Internet Computer (ICP) that enables peer-to-peer exchange of cryptocurrencies for fiat — without intermediaries, without KYC, and without centralized custody.
+A fully decentralized, censorship-resistant platform built entirely on Internet Computer (ICP) that enables peer-to-peer exchange of cryptocurrencies for FIAT — **without intermediaries, without KYC, and without centralized custody**.
+
+This project is a **fully decentralized** platform built entirely on the Internet Computer (ICP) blockchain, enabling peer-to-peer exchange of cryptocurrencies for FIAT and between cryptocurrencies without intermediaries, KYC, or centralized custody.
+
+Leveraging ICP’s serverless architecture, the application runs entirely on-chain, with all logic, storage, and execution contained within canisters. It operates as a decentralized order book where users can create and accept trade offers between crypto and FIAT — or crypto and crypto — in a secure, direct, and trustless way.
+
+The system is designed to maximize censorship resistance and user privacy by completely eliminating the need for identity verification (KYC). This ensures that access to financial tools remains open, permissionless, and globally available — even in restrictive or high-inflation environments.
+
+To facilitate communication between peers during trades, the platform integrates **OpenChat**, a decentralized messaging DApp built on Internet Computer. OpenChat offers a seamless iframe integration, enabling participants to interact, negotiate, and confirm steps directly within the app interface — while staying fully on-chain.
+
+In the case of disputes (such as fraud or payment issues), the platform leverages **Kleros**, a decentralized arbitration protocol built on Ethereum. Using **Chain Fusion** — Internet Computer’s cross-chain integration technology — the system can interact with Ethereum smart contracts, allowing users to escalate disputes to Kleros jurors and resolve them in a transparent, decentralized, and binding manner.
+
+The platform also includes on-chain mechanisms for dispute tracking and mutual confirmation, removing the need for any centralized authority. The result is a censorship-proof, privacy-respecting infrastructure for global, real-world value exchange.
 
 ---
 
 ## 🚀 Overview
 
-This project provides a fully on-chain order book system that connects people who want to exchange crypto and fiat directly, securely, and privately. The system is built using Internet Computer’s canister smart contracts, enabling a trustless environment with no reliance on external servers or traditional finance infrastructure.
+This project provides a fully on-chain order book system that connects people who want to exchange crypto and FIAT directly, securely, and privately. The system is built using Internet Computer’s canister smart contracts, enabling a trustless environment with no reliance on external servers or traditional finance infrastructure.
 
 The main goal is to provide an alternative financial layer for users in countries facing inflation, capital controls, or banking restrictions, where privacy and freedom to transact are essential.
 
@@ -37,7 +49,7 @@ The main goal is to provide an alternative financial layer for users in countrie
 
 ## 💡 Why This Matters
 
-Centralized crypto-fiat ramps often require invasive KYC, are limited by borders, and subject to government control or surveillance. This project flips that model by offering:
+Centralized crypto-FIAT ramps often require invasive KYC, are limited by borders, and subject to government control or surveillance. This project flips that model by offering:
 
 - Unrestricted global access
 - User-controlled privacy
@@ -52,7 +64,8 @@ Centralized crypto-fiat ramps often require invasive KYC, are limited by borders
 - **Crypto <> FIAT OrderBook Canister:** Manages creation and listing of buy/sell FIAT orders.
 - **Vault Canister:** Secure escrow vault for temporarily locking crypto assets.
 - **Matchmaking Logic:** Handles order matching and state transitions.
-- **Dispute Resolution Module:** Integrates with [Kleros](https://kleros.io), an Ethereum-based decentralized arbitration protocol. In case of conflict, either party can escalate the dispute to Kleros, where a randomly selected jury will review the case and issue a binding on-chain verdict.
+- **Dispute Resolution Module:** Integrates with [Kleros](https://kleros.io), an Ethereum-based decentralized arbitration protocol. In case of conflict, either party can escalate the dispute to Kleros, where a randomly selected jury will review the case and issue a binding on-chain verdict. The integration with Kleros is made possible through **Chain Fusion**, which allows Internet Computer canisters to interact directly with Ethereum smart contracts.
+- **OpenChat Integration:** A built-in chat experience powered by [OpenChat](https://openchat.so), allowing trading peers to communicate directly via a seamless iframe integration.
 - **Frontend DApp:** Interface for listing, accepting and managing trades.
 
 ---

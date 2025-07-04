@@ -11,10 +11,10 @@ type CryptoOffer = record {
   token_a_release_tx_index : opt nat;
   token_b_release_tx_index : opt nat;
   token_a_escrow_tx_index : opt nat;
+  token_a_amount : opt nat64;
   token_b_escrow_at : opt nat64;
   conditions : opt text;
   visibility : OfferVisibility;
-  token_b_amount : opt nat;
   taken_at : opt nat64;
   contrapart : opt principal;
   creation_date : nat64;
@@ -55,12 +55,25 @@ type User = record {
 };
 service : () -> {
   cancel_crypto_offer : (nat64) -> (opt CryptoOffer);
+  edit_crypto_offer : (
+      nat64,
+      opt principal,
+      opt principal,
+      opt nat64,
+      opt record { nat64; nat64 },
+      opt OfferVisibility,
+      opt text,
+    ) -> (opt CryptoOffer);
   edit_user : (opt text, opt text) -> (opt User);
   escrow_crypto_token_a : (nat64) -> (opt CryptoOffer);
   escrow_crypto_token_b : (nat64) -> (opt CryptoOffer);
+  get_all_available_fees : () -> (vec record { principal; nat64 }) query;
   get_all_crypto_offers : () -> (vec CryptoOffer) query;
+  get_available_fee : (principal) -> (nat64) query;
   get_crypto_offer : (nat64) -> (opt CryptoOffer) query;
+  get_crypto_offers_by_user : (principal) -> (vec CryptoOffer) query;
   get_user : (principal) -> (opt User) query;
+  new_authority : (principal) -> ();
   new_crypto_offer : (
       principal,
       principal,
@@ -71,6 +84,8 @@ service : () -> {
     ) -> (CryptoOffer);
   new_user : (opt principal) -> (User);
   pause_crypto_offer : (nat64) -> (opt CryptoOffer);
+  remove_authority : (principal) -> ();
   resume_crypto_offer : (nat64) -> (opt CryptoOffer);
-  take_crypto_offer : (nat64, nat) -> (opt CryptoOffer);
+  take_crypto_offer : (nat64, nat64) -> (opt CryptoOffer);
+  withdraw_token_from_vault : (principal) -> (principal, nat64);
 }

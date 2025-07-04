@@ -11,11 +11,11 @@ pub struct CryptoOffer {
     pub id: u64,
     pub creator: Principal,
     pub contrapart: Option<Principal>,
-    pub token_a: Principal,      // buy token
-    pub token_b: Principal,      // sell token
-    pub price_per_unit: u64,     // token_b
-    pub offer_limit: (u64, u64), // token_b
-    pub token_b_amount: Option<Nat>,
+    pub token_a: Principal,      // buy token (creator)
+    pub token_b: Principal,      // sell token (creator)
+    pub price_per_unit: u64,     // token_a in base b
+    pub offer_limit: (u64, u64), // token_a
+    pub token_a_amount: Option<u64>,
     pub visibility: OfferVisibility,
     pub status: OfferStatus,
     pub conditions: Option<String>,

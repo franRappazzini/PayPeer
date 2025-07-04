@@ -41,6 +41,7 @@ impl Default for GlobalState {
         }
     }
 }
+
 fn init_stable_users() -> BTreeMap<Principal, User, Memory> {
     BTreeMap::init(memory::get_stable_btree_memory(0))
 }

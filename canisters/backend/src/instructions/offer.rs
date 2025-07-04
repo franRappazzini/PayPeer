@@ -25,7 +25,7 @@ impl CryptoOffer {
             token_b,
             price_per_unit,
             offer_limit,
-            token_b_amount: None,
+            token_a_amount: None,
             visibility,
             status: OfferStatus::Open,
             conditions,
@@ -64,7 +64,38 @@ impl CryptoOffer {
         self.status = OfferStatus::Cancelled;
     }
 
-    pub fn take(&mut self, token_b_amount: Nat) {
+    pub fn edit(
+        &mut self,
+        token_a: Option<Principal>,
+        token_b: Option<Principal>,
+        price_per_unit: Option<u64>,
+        offer_limit: Option<(u64, u64)>,
+        visibility: Option<OfferVisibility>,
+        conditions: Option<String>,
+    ) -> Self {
+        if let Some(token_a) = token_a {
+            self.token_a = token_a
+        }
+        if let Some(token_b) = token_b {
+            self.token_b = token_b
+        }
+        if let Some(price_per_unit) = price_per_unit {
+            self.price_per_unit = price_per_unit
+        }
+        if let Some(offer_limit) = offer_limit {
+            self.offer_limit = offer_limit
+        }
+        if let Some(visibility) = visibility {
+            self.visibility = visibility
+        }
+        if let Some(conditions) = conditions {
+            self.conditions = Some(conditions)
+        }
+
+        self.clone()
+    }
+
+    pub fn take(&mut self, token_a_amount: u64) {
         let caller = ic_cdk::caller();
 
         assert!(
@@ -76,12 +107,12 @@ impl CryptoOffer {
             "Offer can only be taken if it is Open."
         );
         assert!(
-            token_b_amount >= self.offer_limit.0 && token_b_amount <= self.offer_limit.1,
+            token_a_amount >= self.offer_limit.0 && token_a_amount <= self.offer_limit.1,
             "Token amount must be within the offer limit range."
         );
 
         self.contrapart = Some(caller);
-        self.token_b_amount = Some(token_b_amount);
+        self.token_a_amount = Some(token_a_amount);
         self.taken_at = Some(ic_cdk::api::time());
         self.status = OfferStatus::Started;
     }
