@@ -1,0 +1,37 @@
+{
+  "page": {
+    "title": "Trading",
+    "subtitle": "Browse and trade with other users",
+    "createOrder": "Create Order"
+  },
+  "filters": {
+    "title": "Filters",
+    "pair": "Token Pair",
+    "search": "Search",
+    "searchPlaceholder": "Search by advertiser or token...",
+    "minAmount": "Min Amount",
+    "maxAmount": "Max Amount",
+    "allPairs": "All Pairs"
+  },
+  "tabs": {
+    "buy": "Buy Orders",
+    "sell": "Sell Orders",
+    "all": "All Orders"
+  },
+  "table": {
+    "headers": {
+      "pair": "Token Pair",
+      "price": "Price",
+      "limits": "Limits",
+      "advertiser": "Advertiser",
+      "rating": "Rating",
+      "action": "Action"
+    },
+    "ordersLabel": "orders",
+    "noResults": "No orders found matching your criteria",
+    "actions": {
+      "buy": "Buy",
+      "sell": "Sell"
+    }
+  }
+}

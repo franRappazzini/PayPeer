@@ -1,0 +1,37 @@
+{
+  "page": {
+    "title": "Marketplace",
+    "subtitle": "Explorá y comerciá con otros usuarios",
+    "createOrder": "Crear orden"
+  },
+  "filters": {
+    "title": "Filtros",
+    "pair": "Par de tokens",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar por anunciante o token...",
+    "minAmount": "Monto mínimo",
+    "maxAmount": "Monto máximo",
+    "allPairs": "Todos los pares"
+  },
+  "tabs": {
+    "buy": "Compra",
+    "sell": "Venta",
+    "all": "Todas las órdenes"
+  },
+  "table": {
+    "headers": {
+      "pair": "Par de tokens",
+      "price": "Precio",
+      "limits": "Límites",
+      "advertiser": "Anunciante",
+      "rating": "Reputación",
+      "action": "Acción"
+    },
+    "ordersLabel": "órdenes",
+    "noResults": "No se encontraron órdenes con esos criterios",
+    "actions": {
+      "buy": "Comprar",
+      "sell": "Vender"
+    }
+  }
+}

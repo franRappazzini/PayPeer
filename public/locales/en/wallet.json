@@ -1,0 +1,66 @@
+{
+  "page": {
+    "title": "Billetera",
+    "subtitle": "Gestioná tus saldos de criptomonedas"
+  },
+  "actions": {
+    "send": "Enviar",
+    "receive": "Recibir",
+    "sendTransaction": "Enviar Transacción",
+    "copy": "Copiar",
+    "qr": "Código QR"
+  },
+  "receive": {
+    "title": "Recibir Criptomonedas",
+    "description": "Seleccioná un token para generar una dirección de recepción",
+    "selectToken": "Seleccionar Token",
+    "placeholder": "Elegí un token",
+    "yourAddress": "Tu Dirección"
+  },
+  "send": {
+    "title": "Enviar Criptomonedas",
+    "description": "Enviá tokens a otra dirección",
+    "recipient": "Dirección del Destinatario",
+    "amount": "Cantidad"
+  },
+  "portfolio": {
+    "title": "Resumen del Portafolio",
+    "value": "Valor Total del Portafolio"
+  },
+  "tabs": {
+    "balances": "Saldos",
+    "transactions": "Transacciones"
+  },
+  "balances": {
+    "title": "Saldos de Tokens",
+    "description": "Tus tenencias en criptomonedas",
+    "columns": {
+      "token": "Token",
+      "balance": "Saldo",
+      "usd": "Valor en USD",
+      "change": "Cambio 24h",
+      "actions": "Acciones"
+    }
+  },
+  "transactions": {
+    "title": "Transacciones Recientes",
+    "description": "Historial de tus transacciones",
+    "columns": {
+      "id": "ID de Transacción",
+      "type": "Tipo",
+      "token": "Token",
+      "amount": "Cantidad",
+      "address": "Dirección",
+      "date": "Fecha",
+      "status": "Estado"
+    },
+    "types": {
+      "sent": "Enviada",
+      "received": "Recibida"
+    },
+    "status": {
+      "completed": "Completada",
+      "pending": "Pendiente"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "page": {
+    "title": "Perfil",
+    "subtitle": "Gestioná la información de tu cuenta",
+    "edit": "Editar Perfil",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "sections": {
+    "personal": {
+      "title": "Información Personal",
+      "description": "Tus datos de cuenta y contacto",
+      "avatar": "Cambiar Avatar",
+      "id": "Principal ID",
+      "joinDate": "Miembro Desde",
+      "name": "Nombre Visible",
+      "email": "Email",
+      "community": "Estado en la Comunidad"
+    },
+    "stats": {
+      "title": "Estadísticas de Intercambio",
+      "totalOrders": "Órdenes Totales",
+      "positive": "Positivas",
+      "negative": "Negativas",
+      "successRate": "Tasa de Éxito"
+    },
+    "security": {
+      "title": "Seguridad",
+      "changePassword": "Cambiar Contraseña",
+      "2fa": "Autenticación de Dos Factores",
+      "privacy": "Configuración de Privacidad"
+    }
+  },
+  "misc": {
+    "orders": "órdenes"
+  }
+}

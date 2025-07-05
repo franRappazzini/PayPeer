@@ -1,0 +1,27 @@
+{
+  "navigation": {
+    "firstSection": {
+      "title": "General",
+      "items": {
+        "home": "Inicio",
+        "trading": "Ordenes"
+      }
+    },
+    "secondSection": {
+      "title": "Cuenta",
+      "items": {
+        "profile": "Perfil",
+        "orderHistory": "Historial de Ordenes",
+        "createOrder": "Crear Orden"
+      }
+    },
+    "thirdSection": {
+      "title": "Gestión",
+      "items": {
+        "myAds": "Mis Anuncios",
+        "wallet": "Wallet"
+      }
+    }
+  },
+  "description": "P2P Descentralizado"
+}

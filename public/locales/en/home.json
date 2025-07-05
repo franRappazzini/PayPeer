@@ -1,1 +1,63 @@
-{ "title": "Home", "greeting": "Welcome to PayPeer" }
+{
+  "title": "PayPeer",
+  "subtitle": "P2P Exchange",
+  "description": "Trade Crypto ↔ FIAT and Crypto ↔ Crypto directly with other users. No KYC, no intermediaries — full privacy and total control over your assets.",
+  "button": {
+    "startTrading": "Start Trading",
+    "learnMore": "Learn More",
+    "launchApp": "Launch App"
+  },
+  "problem": {
+    "title": "The Problem We Solve",
+    "description": "Centralized exchanges require invasive KYC, hold your funds, and can freeze accounts at will. They create single points of failure, limit access, and compromise privacy and freedom."
+  },
+  "traditional": {
+    "title": "Traditional Exchanges",
+    "first": "Require invasive KYC and identity checks",
+    "second": "Take custody of your assets",
+    "third": "Can block or freeze your account anytime",
+    "fourth": "Centralized — vulnerable to shutdowns",
+    "fifth": "User privacy is lost"
+  },
+  "payPeer": {
+    "title": "PayPeer P2P",
+    "first": "No KYC required",
+    "second": "You hold your assets at all times",
+    "third": "Fully decentralized and censorship-resistant",
+    "fourth": "Direct peer-to-peer trades (Crypto ↔ Crypto / Crypto ↔ FIAT)",
+    "fifth": "Built to protect your privacy and freedom"
+  },
+  "whyPP": {
+    "title": "Why Choose PayPeer P2P?",
+    "description": "Designed with privacy, decentralization, and user freedom at its core.",
+    "firstCard": {
+      "title": "Privacy First",
+      "description": "No KYC, no tracking, no data collection. Trade freely and anonymously."
+    },
+    "secondCard": {
+      "title": "Peer-to-Peer",
+      "description": "Trade directly with other users without any intermediaries or custody."
+    },
+    "thirdCard": {
+      "title": "Truly Decentralized",
+      "description": "Runs entirely on-chain on the Internet Computer. No servers. No shutdowns."
+    },
+    "fourthCard": {
+      "title": "Secure & Transparent",
+      "description": "Smart contract vaults and on-chain logic ensure trustless and fair trading."
+    },
+    "fifthCard": {
+      "title": "Communication Built-In",
+      "description": "Chat securely with your counterparty via OpenChat integration — directly within the app."
+    },
+    "sixthCard": {
+      "title": "Dispute Resolution",
+      "description": "Fair and decentralized dispute handling using Kleros on Ethereum via Chain Fusion."
+    }
+  },
+  "cta": {
+    "title": "Ready to trade peer-to-peer?",
+    "description": "Join the decentralized revolution. Experience private, permissionless crypto trading.",
+    "button": "Launch App"
+  }
+}

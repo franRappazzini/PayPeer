@@ -1,0 +1,66 @@
+{
+  "page": {
+    "title": "Wallet",
+    "subtitle": "Manage your cryptocurrency balances"
+  },
+  "actions": {
+    "send": "Send",
+    "receive": "Receive",
+    "sendTransaction": "Send Transaction",
+    "copy": "Copy",
+    "qr": "QR Code"
+  },
+  "receive": {
+    "title": "Receive Cryptocurrency",
+    "description": "Select a token to generate a receiving address",
+    "selectToken": "Select Token",
+    "placeholder": "Choose token",
+    "yourAddress": "Your Address"
+  },
+  "send": {
+    "title": "Send Cryptocurrency",
+    "description": "Send tokens to another address",
+    "recipient": "Recipient Address",
+    "amount": "Amount"
+  },
+  "portfolio": {
+    "title": "Portfolio Overview",
+    "value": "Total Portfolio Value"
+  },
+  "tabs": {
+    "balances": "Balances",
+    "transactions": "Transactions"
+  },
+  "balances": {
+    "title": "Token Balances",
+    "description": "Your cryptocurrency holdings",
+    "columns": {
+      "token": "Token",
+      "balance": "Balance",
+      "usd": "USD Value",
+      "change": "24h Change",
+      "actions": "Actions"
+    }
+  },
+  "transactions": {
+    "title": "Recent Transactions",
+    "description": "Your transaction history",
+    "columns": {
+      "id": "Transaction ID",
+      "type": "Type",
+      "token": "Token",
+      "amount": "Amount",
+      "address": "Address",
+      "date": "Date",
+      "status": "Status"
+    },
+    "types": {
+      "sent": "Sent",
+      "received": "Received"
+    },
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending"
+    }
+  }
+}

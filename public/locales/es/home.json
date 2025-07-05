@@ -1,1 +1,63 @@
-{ "title": "Inicio", "greeting": "Bienvenido a PayPeer" }
+{
+  "title": "PayPeer",
+  "subtitle": "P2P Exchange",
+  "description": "Intercambiá cripto por FIAT o cripto por cripto directamente con otros usuarios. Sin KYC, sin intermediarios — privacidad total y control absoluto de tus activos.",
+  "button": {
+    "startTrading": "Comenzar a intercambiar",
+    "learnMore": "Conocer más",
+    "launchApp": "Ir a la app"
+  },
+  "problem": {
+    "title": "El problema que resolvemos",
+    "description": "Los exchanges centralizados exigen KYC invasivo, custodian tus fondos y pueden congelar tu cuenta sin previo aviso. Crean puntos únicos de falla, limitan el acceso y comprometen tu privacidad y libertad."
+  },
+  "traditional": {
+    "title": "Exchanges tradicionales",
+    "first": "Requieren verificación de identidad invasiva (KYC)",
+    "second": "Custodian tus activos",
+    "third": "Pueden congelar tu cuenta en cualquier momento",
+    "fourth": "Son centralizados y vulnerables a cierres",
+    "fifth": "Tu privacidad está comprometida"
+  },
+  "payPeer": {
+    "title": "PayPeer P2P",
+    "first": "No requiere KYC",
+    "second": "Tus activos siempre están bajo tu control",
+    "third": "Totalmente descentralizado y resistente a la censura",
+    "fourth": "Intercambios directos entre pares (Cripto ↔ Cripto / Cripto ↔ FIAT)",
+    "fifth": "Diseñado para proteger tu privacidad y libertad"
+  },
+  "whyPP": {
+    "title": "¿Por qué elegir PayPeer P2P?",
+    "description": "Diseñado con la privacidad, la descentralización y la libertad del usuario como pilares.",
+    "firstCard": {
+      "title": "Privacidad primero",
+      "description": "Sin KYC, sin rastreo, sin recolección de datos. Intercambiá libre y anónimamente."
+    },
+    "secondCard": {
+      "title": "De persona a persona",
+      "description": "Intercambiá directamente con otros usuarios, sin intermediarios ni custodia."
+    },
+    "thirdCard": {
+      "title": "Verdaderamente descentralizado",
+      "description": "Corre 100% on-chain sobre Internet Computer. Sin servidores, sin puntos de cierre."
+    },
+    "fourthCard": {
+      "title": "Seguro y transparente",
+      "description": "Vaults en smart contracts y lógica on-chain que garantizan intercambios justos y sin confianza."
+    },
+    "fifthCard": {
+      "title": "Comunicación integrada",
+      "description": "Chateá con tu contraparte de forma segura a través de OpenChat, directamente desde la app."
+    },
+    "sixthCard": {
+      "title": "Resolución de disputas",
+      "description": "Manejo justo y descentralizado de disputas usando Kleros en Ethereum, vía Chain Fusion."
+    }
+  },
+  "cta": {
+    "title": "¿Listo para intercambiar entre pares?",
+    "description": "Sumate a la revolución descentralizada. Viví el trading cripto como debería ser.",
+    "button": "Ir a la app"
+  }
+}

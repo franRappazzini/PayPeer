@@ -1,0 +1,37 @@
+{
+  "page": {
+    "title": "Profile",
+    "subtitle": "Manage your account information",
+    "edit": "Edit Profile",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "sections": {
+    "personal": {
+      "title": "Personal Information",
+      "description": "Your account details and contact information",
+      "avatar": "Change Avatar",
+      "id": "Principal ID",
+      "joinDate": "Member Since",
+      "name": "Display Name",
+      "email": "Email",
+      "community": "Community Status"
+    },
+    "stats": {
+      "title": "Trading Stats",
+      "totalOrders": "Total Orders",
+      "positive": "Positive",
+      "negative": "Negative",
+      "successRate": "Success Rate"
+    },
+    "security": {
+      "title": "Security",
+      "changePassword": "Change Password",
+      "2fa": "Two-Factor Auth",
+      "privacy": "Privacy Settings"
+    }
+  },
+  "misc": {
+    "orders": "orders"
+  }
+}
