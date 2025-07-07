@@ -1,0 +1,49 @@
+{
+  "page": {
+    "title": "Crear Orden",
+    "subtitle": "Configurá tu orden de intercambio"
+  },
+  "steps": {
+    "details": "Detalles",
+    "settings": "Configuración",
+    "review": "Revisión"
+  },
+  "step1": {
+    "title": "Paso 1: Detalles de la Orden",
+    "description": "Seleccioná los tokens, precio y límites de operación",
+    "type": "Tipo de Orden",
+    "buy": "Comprar",
+    "sell": "Vender",
+    "fromToken": "Token de Origen",
+    "toToken": "Token de Destino",
+    "placeholder": "Seleccioná el token",
+    "price": "Precio por Unidad",
+    "minLimit": "Límite Mínimo",
+    "maxLimit": "Límite Máximo"
+  },
+  "step2": {
+    "title": "Paso 2: Configuración de la Orden",
+    "description": "Configurá la visibilidad y condiciones de la orden",
+    "visibility": "Visibilidad",
+    "public": "Pública - Cualquier usuario puede encontrar y responder a esta orden",
+    "private": "Privada - Solo usuarios con el enlace podrán verla",
+    "conditions": "Condiciones de la Operación (Opcional)",
+    "conditionsPlaceholder": "Agregá requisitos o condiciones específicas para esta operación...",
+    "autoAccept": "Aceptar automáticamente órdenes compatibles"
+  },
+  "step3": {
+    "title": "Paso 3: Revisión y Envío",
+    "description": "Revisá los detalles de tu orden antes de enviarla",
+    "orderType": "Tipo de Orden:",
+    "tokenPair": "Par de Tokens:",
+    "price": "Precio:",
+    "limits": "Límites:",
+    "visibility": "Visibilidad:",
+    "conditions": "Condiciones:"
+  },
+  "actions": {
+    "back": "Anterior",
+    "next": "Siguiente",
+    "submit": "Enviar Orden"
+  }
+}

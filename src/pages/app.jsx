@@ -21,6 +21,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Link } from "react-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -95,7 +96,9 @@ export default function AppPage() {
           <h1 className="text-2xl font-bold">{t("page.title")}</h1>
           <p className="text-muted-foreground">{t("page.subtitle")}</p>
         </div>
-        <Button>{t("page.createOrder")}</Button>
+        <Button>
+          <Link to="/app/orders/create">{t("page.createOrder")}</Link>
+        </Button>
       </div>
 
       {/* Filters */}

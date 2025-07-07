@@ -1,0 +1,49 @@
+{
+  "page": {
+    "title": "Create Order",
+    "subtitle": "Set up your trading order"
+  },
+  "steps": {
+    "details": "Order Details",
+    "settings": "Settings",
+    "review": "Review"
+  },
+  "step1": {
+    "title": "Step 1: Order Details",
+    "description": "Select tokens, price, and trading limits",
+    "type": "Order Type",
+    "buy": "Buy",
+    "sell": "Sell",
+    "fromToken": "From Token",
+    "toToken": "To Token",
+    "placeholder": "Select token",
+    "price": "Price per Unit",
+    "minLimit": "Minimum Limit",
+    "maxLimit": "Maximum Limit"
+  },
+  "step2": {
+    "title": "Step 2: Order Settings",
+    "description": "Configure order visibility and conditions",
+    "visibility": "Visibility",
+    "public": "Public - Anyone can find and respond to this order",
+    "private": "Private - Only users with the link can see this order",
+    "conditions": "Trading Conditions (Optional)",
+    "conditionsPlaceholder": "Add any specific requirements or conditions for this trade...",
+    "autoAccept": "Auto-accept matching orders"
+  },
+  "step3": {
+    "title": "Step 3: Review & Submit",
+    "description": "Review your order before submitting",
+    "orderType": "Order Type:",
+    "tokenPair": "Token Pair:",
+    "price": "Price:",
+    "limits": "Limits:",
+    "visibility": "Visibility:",
+    "conditions": "Conditions:"
+  },
+  "actions": {
+    "back": "Previous",
+    "next": "Next",
+    "submit": "Submit Order"
+  }
+}
