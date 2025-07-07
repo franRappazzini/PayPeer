@@ -14,10 +14,12 @@ import {
 } from "@/components/ui/sidebar";
 
 import { PayPeerIcon } from "../icons";
+import { useTheme } from "@/context/theme-provider";
 import { useTranslation } from "react-i18next";
 
 export function AppSidebar() {
   const { pathname } = useLocation();
+  const { theme } = useTheme();
   const { t } = useTranslation("app-sidebar");
 
   const navigation = [
@@ -73,16 +75,25 @@ export function AppSidebar() {
     },
   ];
 
+  const iconFill =
+    theme === "system"
+      ? window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "white"
+        : "black"
+      : theme === "dark"
+      ? "white"
+      : "black";
+
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
         <SidebarMenuButton
-          size="lg"
+          size="xl"
           className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
         >
           <div className="flex items-center gap-2 px-2 py-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg text-primary-foreground">
-              <PayPeerIcon width={24} height={24} />
+              <PayPeerIcon width={32} height={32} fill={iconFill} />
             </div>
             <div className="flex flex-col">
               <span className="font-semibold text-sm">PayPeer</span>

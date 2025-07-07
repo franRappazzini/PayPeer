@@ -1,66 +1,68 @@
 {
   "page": {
-    "title": "Billetera",
-    "subtitle": "Gestioná tus saldos de criptomonedas"
+    "title": "Wallet",
+    "subtitle": "Manage your cryptocurrency balances"
   },
   "actions": {
-    "send": "Enviar",
-    "receive": "Recibir",
-    "sendTransaction": "Enviar Transacción",
-    "copy": "Copiar",
-    "qr": "Código QR"
+    "send": "Send",
+    "receive": "Receive",
+    "sendTransaction": "Send Transaction",
+    "copy": "Copy",
+    "qr": "QR Code"
   },
   "receive": {
-    "title": "Recibir Criptomonedas",
-    "description": "Seleccioná un token para generar una dirección de recepción",
-    "selectToken": "Seleccionar Token",
-    "placeholder": "Elegí un token",
-    "yourAddress": "Tu Dirección"
+    "title": "Receive Cryptocurrency",
+    "description": "Select a token to generate a receiving address",
+    "selectToken": "Select Token",
+    "placeholder": "Choose token",
+    "yourAddress": "Your Address"
   },
   "send": {
-    "title": "Enviar Criptomonedas",
-    "description": "Enviá tokens a otra dirección",
-    "recipient": "Dirección del Destinatario",
-    "amount": "Cantidad"
+    "title": "Send Cryptocurrency",
+    "description": "Send tokens to another address",
+    "recipient": "Recipient Address",
+    "amount": "Amount",
+    "selectToken": "Select Token",
+    "placeholder": "Choose token"
   },
   "portfolio": {
-    "title": "Resumen del Portafolio",
-    "value": "Valor Total del Portafolio"
+    "title": "Portfolio Overview",
+    "value": "Total Portfolio Value"
   },
   "tabs": {
-    "balances": "Saldos",
-    "transactions": "Transacciones"
+    "balances": "Balances",
+    "transactions": "Transactions"
   },
   "balances": {
-    "title": "Saldos de Tokens",
-    "description": "Tus tenencias en criptomonedas",
+    "title": "Token Balances",
+    "description": "Your cryptocurrency holdings",
     "columns": {
       "token": "Token",
-      "balance": "Saldo",
-      "usd": "Valor en USD",
-      "change": "Cambio 24h",
-      "actions": "Acciones"
+      "balance": "Balance",
+      "usd": "USD Value",
+      "change": "24h Change",
+      "actions": "Actions"
     }
   },
   "transactions": {
-    "title": "Transacciones Recientes",
-    "description": "Historial de tus transacciones",
+    "title": "Recent Transactions",
+    "description": "Your transaction history",
     "columns": {
-      "id": "ID de Transacción",
-      "type": "Tipo",
+      "id": "Transaction ID",
+      "type": "Type",
       "token": "Token",
-      "amount": "Cantidad",
-      "address": "Dirección",
-      "date": "Fecha",
-      "status": "Estado"
+      "amount": "Amount",
+      "address": "Address",
+      "date": "Date",
+      "status": "Status"
     },
     "types": {
-      "sent": "Enviada",
-      "received": "Recibida"
+      "sent": "Sent",
+      "received": "Received"
     },
     "status": {
-      "completed": "Completada",
-      "pending": "Pendiente"
+      "completed": "Completed",
+      "pending": "Pending"
     }
   }
 }

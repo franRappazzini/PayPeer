@@ -9,8 +9,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const AppLayout = () => {
   return (
     <Suspense fallback="loading">
-      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-        <SidebarProvider>
+      <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+        <SidebarProvider defaultOpen={false}>
           <AppSidebar />
 
           <SidebarInset>

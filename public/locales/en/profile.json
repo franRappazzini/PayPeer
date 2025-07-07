@@ -2,6 +2,10 @@
   "page": {
     "title": "Profile",
     "subtitle": "Manage your account information",
+    "loading": "Loading...",
+    "loadingDescription": "Please wait while we load your profile data",
+    "callToLogin": "Please connect your wallet to view your profile",
+    "callToLoginDescription": "You need to connect your wallet to access your profile features",
     "edit": "Edit Profile",
     "save": "Save",
     "cancel": "Cancel"

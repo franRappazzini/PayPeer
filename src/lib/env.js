@@ -1,0 +1,9 @@
+const DFX_NETWORK = import.meta.env.VITE_DFX_NETWORK;
+const BACKEND_CANISTER_ID = import.meta.env.VITE_BACKEND_CANISTER_ID;
+const FRONTEND_CANISTER_ID = import.meta.env.VITE_FRONTEND_CANISTER_ID;
+
+export const env = {
+  DFX_NETWORK,
+  BACKEND_CANISTER_ID,
+  FRONTEND_CANISTER_ID,
+};
