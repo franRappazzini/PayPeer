@@ -96,3 +96,62 @@ We’re building something important — censorship-resistant, user-controlled, 
 
 <!-- > **Twitter:** [@your_handle_here]   -->
 <!-- > **Hackathon:** Internet Computer Global Hackathon 2025 -->
+
+## Canister IDs
+
+| Canister Name | Canister ID (ic)              | Link                                                                                       |
+| ------------- | ----------------------------- | ------------------------------------------------------------------------------------------ |
+| Frontend      | `hse7h-diaaa-aaaah-arika-cai` | [frontend](https://hse7h-diaaa-aaaah-arika-cai.icp0.io/)                                   |
+| Backend       | `hhdok-caaaa-aaaah-arijq-cai` | [backend](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=hhdok-caaaa-aaaah-arijq-cai) |
+| Assets        | `hvfzt-oqaaa-aaaah-arikq-cai` | -                                                                                          |
+
+## Run Locally
+
+> Note: Make sure you have the Internet Computer SDK (`dfx`) installed and configured properly.
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone git@github.com:franRappazzini/pay_peer.git
+   cd pay_peer
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start a local replica network:
+
+   ```bash
+   dfx start --clean
+   ```
+
+4. Deploy the canisters (in a separate terminal):
+
+   ```bash
+   dfx deploy
+   ```
+
+This command will deploy the backend canister and the frontend canister to your local Internet Computer instance and will show the URLs where you can access them like:
+
+```bash
+Frontend canister via browser:
+    assets:
+      - http://uxrrr-q7777-77774-qaaaq-cai.localhost:4943/ (Recommended)
+      - http://127.0.0.1:4943/?canisterId=uxrrr-q7777-77774-qaaaq-cai (Legacy)
+    frontend:
+      - http://uzt4z-lp777-77774-qaabq-cai.localhost:4943/ (Recommended)
+      - http://127.0.0.1:4943/?canisterId=uzt4z-lp777-77774-qaabq-cai (Legacy)
+  Backend canister via Candid interface:
+    backend: http://127.0.0.1:4943/?canisterId=umunu-kh777-77774-qaaca-cai&id=u6s2n-gx777-77774-qaaba-cai
+```
+
+5. Run the frontend development server (optional):
+
+   ```bash
+   npm run dev
+   ```

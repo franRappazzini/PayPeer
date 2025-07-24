@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const HomeLayout = () => {
   return (
     <Suspense fallback="loading">
-      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
         <Outlet />
       </ThemeProvider>
     </Suspense>
